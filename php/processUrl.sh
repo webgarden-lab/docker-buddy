@@ -5,6 +5,6 @@ STAGING_BASE_URL="$3"
 
 ## Replace dots and slashes from branch name to dashes
 URL="${BRANCH//./-}"
-URL="${URL//\\//-}"
+URL="${URL//\//-}"
 
-echo "$PROJECT-$URL.${STAGING_BASE_URL}" 
+echo "$PROJECT-$URL.${STAGING_BASE_URL}"
