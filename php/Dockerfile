@@ -1,5 +1,7 @@
 FROM webgarden/php
 
+RUN apt-get update && apt-get install git -y --no-install-recommends
+
 ADD processUrl.sh /usr/bin/processUrl
 RUN chmod +x /usr/bin/processUrl
 
